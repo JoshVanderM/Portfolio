@@ -1,0 +1,49 @@
+/*
+COLORS 
+#c31616	(195,22,22) light red
+#6d1515	(109,21,21) brick
+#000000	(0,0,0) black       
+#980000	(152,0,0) dark red
+#4f4c4c	(79,76,76) Grey
+*/
+
+
+body {
+    background: #6d1515;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+
+div.container {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    "sidebar main";
+}
+
+div.sidebar {
+    grid-area: sidebar;
+    height: 100%;
+    color: white;
+    text-align: center;
+}
+
+div.main {
+    grid-area: main;
+    height: 100%;
+    color: white;
+    text-align: center;
+    background-image: url("me.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
